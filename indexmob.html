@@ -2,12 +2,15 @@
 <html>
 <head>
 
-  <title>jQuery Mobile page</title>
+  <title>Red Squirrel</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+.ui-dialog  .ui-header .ui-btn-icon-notext  { display:none;} 
+</style>
 </head>
 <body>
     
@@ -23,15 +26,15 @@
     </ul>
 
         </div>
-        <div data-role="header">
-         <span class="ui-title"></span>
+        <div data-role="header" style="background:#f9f9f9 !important; border-width:0px !important;">
+          
             <a href="#nav" class="ui-btn ui-btn-left  ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn ui-shadow">View</a>
         </div>
         <div data-role="main" class="ui-content"  >
             
             <h1 style="text-align:center; color:white;">Can we change our relationship responses?</h1>
         </div>
-        <div data-role="footer" style="text-align:center;" data-position="fixed">  
+        <div data-role="footer" style="text-align:center; background:#f9f9f9 !important; border-width:0px !important;" data-position="fixed" >  
             <a href="#page1" class="ui-btn ui-corner-all ui-icon-carat-d ui-btn-icon-notext ui-shadow">Down</a>
         </div>
       </div>
@@ -39,12 +42,9 @@
      
     
      <div data-role="page" id="page1">
-    <div data-role="header">  
-<div id="button" style="text-align:center; position:relative;
-margin-bottom:-46px;">
-        <a href="#index"  class="ui-btn ui-corner-all ui-icon-carat-u ui-btn-icon-notext ui-shadow">Up</a></div>
+    <div data-role="header" style="background:#f9f9f9 !important;">  
        
-         <span class="ui-title"></span>
+        
         
          <div data-role="navbar">
             <ul>
@@ -68,7 +68,7 @@ margin-bottom:-46px;">
 
     <div data-role="page" id="page2" >
     <div data-role= "header">
-        <span class="ui-title"></span>
+         
             <div data-role="navbar">
             <ul>
       <li><a href="#index">Home</a></li>
@@ -94,7 +94,7 @@ As we all know, some relationships are positive, energising and rewarding whilst
     
       <div data-role="page" id="page3">
         <div data-role= "header">
-        <span class="ui-title"></span>
+         
             <div data-role="navbar">
             <ul>
       <li><a href="#index">Home</a></li>
@@ -111,12 +111,72 @@ As we all know, some relationships are positive, energising and rewarding whilst
 
 Each relaxing mini-session helps to develop an understanding of personal responses to relationship experiences, enabling you to make considered and positive choices that conserve your energy and reduce your levels of stress.  As a result you can learn to more effectively and efficiently respond to people in the world around you. 
             </h3>
-        </div>
-        </div>
+            
+            <a href="#session1" data-rel="dialog" class="ui-btn ui-corner-all">Mini-sessions</a>
+            
+         
+<p>
+    To enquire about taking part in the next Red Squirrel events, please contact Angela angelatomkins@icloud.com 
+    </p>
+          </div>
+          </div>
     
+     <div data-role="page" data-dialog="true" id="session1">
+<div data-role="header" >
+    <span class="ui-title">Mini Session 1 </span></div>
+ <div data-role="main" class="ui-content">
+     <h4> Empowering Yourself in a Stressful World – empower yourself by knowing and managing yourself better. </h4>
+Much emphasis is placed on the ability to perform, particularly with regard to technical and intellectual intelligence however relationship building and teamwork can be overlooked, leading to stress! This mini session provides the opportunity to learn about emotional intelligence and how it is linked to stress. With a greater awareness of internationally acclaimed models of ‘emotional intelligence’, this session provides an opportunity to practice a range of simple to learn techniques to help you recognise and manage your emotional responses in stressful situations leading to enhanced wellbeing and happiness at work. </div>
+         <div data-role="footer" class="ui-bar" >
+         <a href="#page3" data-role="button" data-icon="delete">Close</a>
+         <a href="#session2"  data-role="button" data-icon="arrow-r"  >Next</a>
+         </div>
+</div>
+    
+         <div data-role="page" data-dialog="true" id="session2">
+<div data-role="header" >
+    <span class="ui-title">Mini Session 2 </span></div>
+ <div data-role="main" class="ui-content">
+     <h4> Improving Your Relationship Dynamics – enhance your interpersonal effectiveness by learning to respond rather than to react.</h4>
+<p>Are you familiar with any of these scenarios? Too much to do in a limited time, ‘bossy’ bosses, people not taking responsibility for their work, having to do the work others should be doing, aggressive behaviours from others, feeling that creativity has disappeared under a sea of processes and procedures. Help is at hand! During this session you will discover the power of Functional Fluency. Functional Fluency is about ‘Maximising Interpersonal Effectiveness (www.functionalfluency.com). Using this internationally acclaimed model and Angela’s in depth knowledge of applying it, you will explore the model and learn how to use it to develop “positive and flexible ways of responding to each other in ways that help us to communicate well” (Susannah Temple PhD 2014).</p> </div>
+         <div data-role="footer" class="ui-bar" >
+             <a href="#page3" data-role="button" data-icon="delete">Close</a>
+        <a href="#session1"  data-role="button" data-icon="arrow-l"  >Go Back</a>
+         <a href="#session3"  data-role="button" data-icon="arrow-r"  >Next</a>
+         </div>
+</div>
+    
+
+    
+     <div data-role="page" data-dialog="true" id="session3">
+<div data-role="header" >
+    <span class="ui-title">Mini Session 3 </span></div>
+ <div data-role="main" class="ui-content">
+     <h4> Developing Responsiveness – using self-awareness to identify and apply a range of effective responses to everyday situations.   </h4>
+During this session you will learn how to apply your new knowledge and skills to your own experiences as well as to a series of case studies such as, “I’m in a team, certain individuals don’t get on, this makes me feel frustrated and I sense I’m the one being blamed. I know I have great ideas to offer but I’m being ignored and I’m not happy”.  </div>
+         <div data-role="footer" class="ui-bar" >
+             <a href="#page3" data-role="button" data-icon="delete">Close</a>
+        <a href="#session2"  data-role="button" data-icon="arrow-l"  >Go Back</a>     
+         <a href="#session4"  data-role="button" data-icon="arrow-r"  >Next</a>
+         </div>
+</div>
+    
+       <div data-role="page" data-dialog="true" id="session4">
+<div data-role="header" >
+    <span class="ui-title">Mini Session 4 </span></div>
+ <div data-role="main" class="ui-content">
+     <h4> The Art and Skill of Positive Conversations – how to get the best out of yourself and others in day-to-day conversations.   </h4>
+During this session you will learn how to apply your new knowledge and skills to your own experiences as well as to a series of case studies such as, “I’m in a team, certain individuals don’t get on, this makes me feel frustrated and I sense I’m the one being blamed. I know I have great ideas to offer but I’m being ignored and I’m not happy”. </div>
+         <div data-role="footer" class="ui-bar" >
+        <a href="#session3"  data-role="button" data-icon="arrow-l"  >Go Back</a>     
+        <a href="#page3" data-role="button" data-icon="delete">Close</a>
+         
+         </div>
+</div>
+            
         <div data-role="page" id="page4">
         <div data-role= "header">
-        <span class="ui-title"></span>
+         
             <div data-role="navbar">
             <ul>
       <li><a href="#index">Home</a></li>
@@ -148,7 +208,7 @@ angelatomkins@icloud.com
     
      <div data-role="page" id="page5">
         <div data-role= "header">
-        <span class="ui-title"></span>
+         
             <div data-role="navbar">
             <ul>
       <li><a href="#index">Home</a></li>
@@ -167,7 +227,7 @@ angelatomkins@icloud.com
     
     <div data-role="page" id="page6">
         <div data-role= "header">
-        <span class="ui-title"></span>
+         
             <div data-role="navbar">
             <ul>
       <li><a href="#index">Home</a></li>
