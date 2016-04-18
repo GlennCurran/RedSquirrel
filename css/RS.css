@@ -10,6 +10,12 @@ h1 {
     font-family: sans-serif;
 }
 
+#map {
+        height: 600px;
+        width: 600px;
+    
+      }
+
 p {
     margin: auto;
     width: 85%;
@@ -19,6 +25,7 @@ p {
 content {
     text-align: center;
     font-family: sans-serif;
+    align-content: center;
 }
 
 #imagebox {

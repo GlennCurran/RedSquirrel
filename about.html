@@ -76,7 +76,23 @@ Angela has received numerous accolades for innovation in learning during a 25-y
 You can read more about Angela’s professional qualifications and experience on LinkedIn.
 </p>
          
+<div id="map"> </div>
+        
         </content>
+        
+        
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 51.886356, lng: -2.088475},
+          zoom: 14 
+        }); 
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV9ZOEt0zyslC6EMqNDb9qZv7o-Qp2lLw&callback=initMap"
+    async defer></script>
+
         
     </body>
 </html>
